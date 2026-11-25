@@ -1,0 +1,36 @@
+{
+  "name": "valefill-byakyz",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ValeFill By Akyz: rellena automáticamente el vale azul de comprobante de gastos.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test \"tests/*.test.ts\"",
+    "preview": "vite preview",
+    "icons": "capacitor-assets generate --android",
+    "android:add": "cap add android",
+    "android:sync": "npm run build && cap sync android",
+    "android:debug": "npm run android:sync && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/filesystem": "^6.0.0",
+    "@capacitor/share": "^6.0.0",
+    "jspdf": "^2.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^6.0.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.0",
+    "vite": "^5.4.0"
+  }
+}

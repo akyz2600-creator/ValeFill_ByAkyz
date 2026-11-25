@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vite/
+*.log
+.DS_Store
+
+# Android (los ignores propios de la carpeta android/ los genera Capacitor)
+android/.gradle/
+android/local.properties
